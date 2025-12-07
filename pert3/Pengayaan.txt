@@ -8,3 +8,44 @@ Setelah menyelesaikan kode, jawab pertanyaan berikut:
 5. Mengapa kita perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class yang terpisah sama sekali (misal class Karyawan dan class Manajer dibuat terpisah tanpa hubungan)?
 
 Jawaban:
+
+RESPONSI PBO 2
+NAMA		: FIKRY MUMTAZ PRATAMA
+NIM		: H1D024106
+SHIFT		: SHIFT B
+TANGGAL	: 07/12/2025
+1. Apa fungsi keyword extends dalam deklarasi class Java?
+
+Keyword extends digunakan untuk menyatakan bahwa sebuah class merupakan subclass dari class lain. Dengan menggunakan extends, subclass mewarisi seluruh atribut dan method dari superclass, sehingga dapat memanfaatkan kembali fitur yang sudah ada serta menambahkan perilaku baru sesuai kebutuhan.
+
+2. Jelaskan perbedaan antara Method Overloading dan Method Overriding!
+
+Method Overloading terjadi ketika sebuah class memiliki beberapa method dengan nama yang sama, tetapi berbeda parameter (jumlah atau tipe datanya). Overloading tidak berkaitan dengan pewarisan dan terjadi dalam satu class yang sama.
+
+Method Overriding terjadi ketika subclass mendefinisikan ulang method yang sudah ada di superclass dengan isi (implementasi) yang berbeda. Overriding digunakan untuk menyesuaikan perilaku method agar sesuai dengan kebutuhan objek subclass.
+
+3. Apa kegunaan keyword super di dalam constructor subclass (Manajer)?
+
+Keyword super digunakan untuk memanggil constructor milik superclass (Karyawan). Tujuannya adalah memastikan bahwa atribut yang diwarisi—seperti nama dan gaji pokok—diinisialisasi terlebih dahulu sesuai mekanisme yang sudah ditentukan di kelas induk. Dengan demikian, proses pewarisan bekerja secara konsisten dan terstruktur.
+
+4. Jika variabel di class Karyawan diubah menjadi private, apa yang terjadi pada class Manajer? Bagaimana solusinya?
+
+Jika variabel superclass menjadi private, maka subclass (Manajer) tidak dapat mengakses variabel tersebut secara langsung. Hal ini menyebabkan error ketika mencoba menggunakan nama atau gajiPokok.
+Solusinya adalah:
+
+mengganti access modifier menjadi protected, atau
+
+menyediakan getter dan setter pada class Karyawan sehingga subclass tetap dapat mengakses data melalui method yang aman.
+
+5. Mengapa perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class terpisah?
+
+Inheritance digunakan untuk menghindari pengulangan kode (code duplication) dan menjaga struktur program tetap efisien serta mudah dipelihara. Dengan inheritance, fitur umum dapat didefinisikan sekali di superclass, kemudian diturunkan ke subclass.
+Keuntungannya dibanding membuat class terpisah tanpa hubungan:
+
+meningkatkan reusability kode
+
+memudahkan pemeliharaan dan pengembangan
+
+memungkinkan penggunaan polymorphism
+
+memperkuat model data dengan hubungan hierarkis yang lebih realistis

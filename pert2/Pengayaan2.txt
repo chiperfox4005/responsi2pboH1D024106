@@ -7,4 +7,25 @@ Apa perbedaan antara mengakses variabel secara langsung (misalnya: objek.variabe
 Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi data dalam sebuah class!
 Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
 
+
+RESPONSI PBO 2
+NAMA		: FIKRY MUMTAZ PRATAMA
+NIM		: H1D024106
+SHIFT		: SHIFT B
+TANGGAL	: 07/12/2025
+
 Jawaban
+Apa yang dimaksud dengan constructor overloading dalam pemrograman berorientasi objek?
+Constructor overloading adalah konsep dalam OOP di mana sebuah class memiliki lebih dari satu constructor dengan nama yang sama, tetapi memiliki daftar parameter (jumlah, tipe, atau urutan) yang berbeda. Tujuan dari constructor overloading adalah memberikan fleksibilitas dalam proses pembuatan objek dengan kondisi atau informasi awal yang berbeda-beda.
+
+Bagaimana cara Java membedakan constructor yang memiliki nama sama namun parameter berbeda?
+Java membedakan constructor melalui parameter list-nya. Mekanisme ini disebut method signature, yaitu kombinasi dari jumlah parameter, tipe parameter, dan urutan parameter. Selama signature-nya berbeda, Java dapat menentukan constructor mana yang harus dipanggil ketika objek dibuat.
+
+Apa perbedaan antara mengakses variabel secara langsung dengan menggunakan method setter?
+Mengakses variabel secara langsung berarti memberikan akses penuh kepada kode luar untuk membaca atau mengubah nilai variabel tanpa kendali. Sementara itu, penggunaan method setter memberikan lapisan kontrol, karena programmer dapat menambahkan validasi, pembatasan, ataupun logika tertentu sebelum nilai variabel diubah. Dengan demikian, setter membantu menjaga konsistensi dan integritas data dalam objek.
+
+Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi data dalam sebuah class!
+Encapsulation adalah prinsip OOP yang bertujuan untuk membungkus data (variabel) dan perilaku (method) dalam satu kesatuan class, sekaligus membatasi akses langsung terhadap data tersebut. Dengan menjadikan variabel sebagai private dan menyediakan akses melalui method (getter dan setter), class dapat memastikan bahwa setiap perubahan data dilakukan sesuai aturan yang ditetapkan. Hal ini mencegah manipulasi data secara sembarangan dan meningkatkan keamanan serta integritas objek.
+
+Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
+Constructor tidak memiliki return type karena fungsinya bukan untuk mengembalikan nilai, melainkan untuk menginisialisasi objek yang baru dibuat. Java secara otomatis menangani proses pengembalian referensi objek setelah constructor dipanggil, sehingga programmer tidak perlu (dan tidak boleh) menentukan tipe kembalian. Ketidakhadiran return type, termasuk void, merupakan pembeda utama antara constructor dan method biasa dalam Java.

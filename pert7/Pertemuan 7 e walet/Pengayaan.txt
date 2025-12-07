@@ -1,0 +1,49 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa perbedaan antara interface dengan class biasa?
+2. Mengapa interface tidak memiliki implementasi method di dalamnya?
+3. Apa tujuan penggunaan keyword "implements" pada sebuah class?
+4. Apakah sebuah class dapat mengimplementasikan lebih dari satu interface? Jelaskan dan berikan contoh sederhana.
+5. Jika sebuah class mengimplementasikan interface, apa yang terjadi jika class tersebut tidak mengimplementasikan semua method dari interface tersebut?
+
+1. Apa perbedaan antara interface dengan class biasa?
+
+Interface adalah kontrak perilaku yang hanya berisi daftar method tanpa isi (abstract).
+Class biasa berisi data dan implementasi method yang lengkap.
+
+Interface menentukan apa yang harus dilakukan,
+sedangkan class menentukan bagaimana cara melakukannya.
+
+2. Mengapa interface tidak memiliki implementasi method di dalamnya?
+
+Karena tujuan interface adalah memberikan standar perilaku yang harus dipatuhi oleh class yang menggunakannya.
+Interface memastikan semua class memiliki method yang sama, tetapi cara kerjanya bebas ditentukan masing-masing class.
+
+3. Apa tujuan penggunaan keyword “implements” pada sebuah class?
+
+Keyword implements digunakan ketika sebuah class ingin mengadopsi interface tertentu.
+Dengan kata lain, class tersebut menyatakan bahwa ia bersedia menyediakan seluruh implementasi method yang ada dalam interface tersebut.
+
+4. Apakah sebuah class dapat mengimplementasikan lebih dari satu interface? Jelaskan dan berikan contoh sederhana.
+
+Ya, sebuah class dapat mengimplementasikan lebih dari satu interface.
+Ini disebut multiple interface implementation.
+
+Contoh:
+
+interface A { void methodA(); }
+interface B { void methodB(); }
+
+class C implements A, B {
+    public void methodA() { }
+    public void methodB() { }
+}
+
+
+Class C wajib mengisi method dari keduanya, A dan B.
+
+5. Jika sebuah class mengimplementasikan interface, apa yang terjadi jika class tersebut tidak mengimplementasikan semua method dari interface tersebut?
+
+Class tersebut akan error kecuali ia dideklarasikan sebagai abstract class.
+Java mewajibkan bahwa setiap class yang mengimplementasikan interface harus mengisi seluruh method-nya.

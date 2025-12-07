@@ -6,4 +6,54 @@ Mengapa penting menggunakan konstanta (final variables) dalam suatu kelas? Apa k
 Apa yang terjadi jika kita mencoba mengubah nilai suatu konstanta setelah objek dibuat? Berikan contoh.
 Bagaimana cara mendefinisikan konstanta dalam bahasa Java?
 
-Jawaban
+
+RESPONSI PBO 2
+NAMA		: FIKRY MUMTAZ PRATAMA
+NIM		: H1D024106
+SHIFT		: SHIFT B
+TANGGAL	: 07/12/2025
+1. Perbedaan fungsi dan prosedur
+
+Fungsi → ada nilai balik (pakai return). Biasanya buat hitung-hitungan.
+Contoh: hitungBMI(), hitungKalori()
+
+Prosedur → nggak mengembalikan apa-apa. Cuma buat nampilin atau melakukan sesuatu.
+Contoh: tampilInfo(), tampilKategori()
+
+2. Kenapa perlu pakai konstanta (final)?
+
+Supaya nilai penting nggak bisa diubah sembarangan.
+Keuntungannya:
+
+Bikin program lebih aman
+
+Menghindari salah ubah angka penting
+
+Nilai standar jadi tetap (misal: faktor aktivitas selalu 1.2)
+
+3. Apa yang terjadi kalau nilai final coba diubah?
+
+Langsung error waktu compile.
+
+Contoh:
+
+p.faktorAktivitas = 1.5;
+
+
+Hasilnya:
+
+cannot assign a value to final variable faktorAktivitas
+
+
+Artinya Java nggak ngizinin nilai final diganti.
+
+4. Cara bikin konstanta di Java
+
+Pakai kata kunci final.
+
+Contoh:
+
+final double faktorAktivitas = 1.2;
+
+
+Nilai ini bakal terkunci dan nggak bisa diubah lagi.

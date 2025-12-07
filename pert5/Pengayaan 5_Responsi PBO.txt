@@ -5,3 +5,29 @@ Jawablah pertanyaan berikut:
 3. Apa perbedaan override dan overload?
 4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
 5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+RESPONSI PBO
+NAMA		: FIKRY MUMTAZ PRATAMA
+NIM		: H1D024106
+SHIFT		: SHIFT B
+TANGGAL	: 07/12/2025
+JAWAB
+1. Apa yang dimaksud dengan polimorfisme dalam OOP? Jelaskan bagaimana metode override bekerja.
+
+Polimorfisme adalah kemampuan suatu referensi objek untuk merujuk ke berbagai bentuk objek lain selama objek tersebut berada dalam satu hierarki pewarisan. Metode override bekerja ketika subclass mendefinisikan kembali metode yang sama dengan signature yang sama seperti pada superclass, sehingga perilaku metode berubah sesuai implementasi subclass. Pemanggilan metode override ditentukan saat program berjalan (runtime).
+
+2. Mengapa array bertipe defaultMesin dapat menyimpan objek mesinMotor dan mesinTraktor?
+
+Hal ini dimungkinkan karena mesinMotor dan mesinTraktor merupakan subclass dari defaultMesin. Java memperbolehkan tindakan upcasting, yaitu ketika objek subclass diperlakukan sebagai objek superclass. Dengan demikian, array defaultMesin[] dapat menampung seluruh objek yang merupakan turunan dari defaultMesin.
+
+3. Apa perbedaan override dan overload?
+
+Override terjadi ketika subclass menulis ulang metode superclass dengan nama, parameter, dan tipe kembalian yang sama, sehingga perilakunya berubah. Overload terjadi ketika sebuah class memiliki beberapa metode dengan nama yang sama tetapi parameter yang berbeda; perbedaan ditentukan saat kompilasi, bukan saat runtime.
+
+4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
+
+Polimorfisme membuat sistem lebih fleksibel dan mudah diperluas. Objek berbagai jenis mesin dapat diproses menggunakan satu tipe referensi yang sama, sehingga kode menjadi lebih sederhana, modular, dan mengurangi duplikasi. Penambahan jenis mesin baru tidak mengharuskan perubahan besar pada kode yang sudah ada.
+
+5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+Dynamic dispatch bekerja dengan menentukan metode yang dipanggil berdasarkan tipe objek sebenarnya pada saat runtime, bukan berdasarkan tipe variabel referensi. Jika variabel bertipe superclass menyimpan objek subclass, maka Java akan menjalankan metode versi subclass ketika metode tersebut di-override.

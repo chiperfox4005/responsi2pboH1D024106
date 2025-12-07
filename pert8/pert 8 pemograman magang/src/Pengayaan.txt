@@ -1,0 +1,46 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+
+Tujuan utama interface adalah menyediakan kontrak atau aturan perilaku yang harus dipatuhi oleh setiap class yang mengimplementasikannya. Interface mendefinisikan apa yang harus dilakukan oleh sebuah class, tanpa menentukan bagaimana caranya.
+Dengan demikian, interface memastikan bahwa setiap class yang mengimplementasikannya memiliki serangkaian method dengan struktur yang sama, meskipun implementasinya bisa berbeda-beda. Hal ini menjaga konsistensi perilaku antar objek dalam sebuah sistem.
+
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+
+Interface dapat diimplementasikan oleh banyak class karena interface hanya mendefinisikan aturan umum tanpa implementasi. Makna konseptualnya adalah bahwa satu aturan dapat diterapkan dalam berbagai bentuk perilaku.
+Dalam desain sistem, hal ini memungkinkan fleksibilitas yang tinggi: berbagai objek dapat berperilaku sesuai dengan kontrak yang sama, namun dengan mekanisme internal yang berbeda. Dengan cara ini, sistem menjadi mudah diperluas tanpa harus mengubah struktur dasar.
+
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+
+Secara konsep, extends digunakan untuk mewarisi sifat dan perilaku dari sebuah class atau interface lain. Artinya, child mengambil struktur dasar yang sudah ada dan dapat mengembangkan atau memodifikasinya.
+
+Sementara itu, implements digunakan untuk menyatakan bahwa sebuah class bersedia memenuhi kontrak yang ditentukan oleh interface. Fokusnya bukan pada pewarisan perilaku, melainkan pada pemenuhan kewajiban method yang harus disediakan class tersebut.
+
+Perbedaannya dapat diringkas sebagai berikut:
+
+extends berarti mewarisi
+
+implements berarti mematuhi kontrak.
+
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+
+Default method diperkenalkan untuk menjaga kompatibilitas ketika interface diperbarui. Dahulu, menambahkan method baru ke interface dapat menyebabkan semua class yang mengimplementasikannya rusak karena mereka belum menyediakan implementasi method tersebut.
+
+Dengan adanya default method, interface boleh memiliki method baru dengan implementasi bawaan, sehingga class-class lama tetap berjalan tanpa perlu diubah.
+Default method membuat sistem lebih mudah berevolusi, karena memungkinkan penambahan fitur ke interface tanpa memaksa perubahan besar pada kode yang sudah ada.
+
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Multiple interface memungkinkan sebuah class memiliki beberapa kemampuan sekaligus, karena class dapat mengimplementasikan lebih dari satu interface. Ini memberi fleksibilitas tinggi dalam desain, misalnya sebuah objek bisa menjadi “karyawan kontrak” sekaligus “pengguna sistem”.
+
+Berbeda dengan multiple inheritance pada class, multiple interface tidak membawa risiko konflik pewarisan karena interface tidak memiliki state atau implementasi perilaku yang kompleks.
+Dengan demikian, class dapat menggabungkan banyak peran tanpa terjebak dalam masalah seperti ambiguitas pewarisan atau tumpang tindih atribut.
+
+Multiple interface memberikan manfaat desain yang kaya, tetapi tetap menjaga struktur kode tetap aman dan terprediksi.
